@@ -1,0 +1,45 @@
+h1{
+color: orange;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "sidebar    top-center  top-right"
+        "sidebar    center  center-right"
+        "bottom-left    footer  footer";
+
+    gap: 30px;
+
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.container div{
+    padding: 30px;
+    background-color: lightblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+.top-center{
+    grid-area: top-center;
+}
+.top-right{
+    grid-area: top-right;
+}
+.center{
+    grid-area: center;
+}
+.center-right{
+    grid-area: center-right;
+}
+.bottom-left{
+    grid-area: bottom-left;
+}
+.footer{
+    grid-area: footer;
+}
